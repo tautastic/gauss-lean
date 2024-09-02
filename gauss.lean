@@ -24,7 +24,6 @@ def gauss_elim (mat : Array (List Float)) : List (List Float) :=
       elim m' (col + 1)
     else
       m.toList
-  termination_by m.size - col
   elim mat 0
 
 def matrix_to_solutions (m : List (List Float)) : String :=
